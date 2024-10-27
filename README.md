@@ -8,5 +8,5 @@
 ## Ejecución
 Ejecuta `ng serve` y abre el navegador en la ruta especificada en la terminal
 
-## usuario y contraseña
-admin pass
+## usuario/contraseña
+## admin/pass
