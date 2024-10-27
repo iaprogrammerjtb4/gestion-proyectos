@@ -1,0 +1,38 @@
+.projects h2{
+  margin-top: 6vh;
+  text-align: center;
+}
+.container{
+  margin:6vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 12px;
+}
+
+.project-card {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 600px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.card-header h4 {
+  margin: 0;
+  font-size: 1rem;
+  color: #777;
+}
+
+.card-body p {
+  margin: 8px 0;
+  font-size: 0.9rem;
+  color: #555;
+}

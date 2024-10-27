@@ -1,0 +1,20 @@
+<div class="projects">
+  <h2>Lista de Proyectos</h2>
+  <div class="container">
+    <mat-card  *ngFor="let project of projects" (click)="onSelectProject(project.id)" class="project-card">
+      <mat-card-header>
+        <mat-card-title><h3>{{ project.name }}</h3></mat-card-title>
+        <mat-card-subtitle><strong>Descripción:</strong></mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p><strong>Id:</strong>{{ project.id }}</p>
+        <p><strong>Email:</strong>{{ project.email }}</p>
+        <p><strong>Calle:</strong> {{ project.address.street }}</p>
+        <p><strong>Suite:</strong> {{ project.address.suite }}</p>
+        <p><strong>Ciudad:</strong> {{ project.address.city }}</p>
+        <p><strong>Zipcode:</strong> {{ project.address.zipcode }}</p>
+        <p><strong>Coordenadas:</strong> {{ project.address.geo.lat }}, {{ project.address.geo.lng }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

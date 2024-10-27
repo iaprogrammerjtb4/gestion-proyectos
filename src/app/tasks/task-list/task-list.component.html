@@ -1,0 +1,16 @@
+<div class="task-list-container">
+  <h2 class="project-title">Proyecto ID: {{ projectId }}</h2>
+  <ul class="task-list">
+    <li *ngFor="let task of tasks" class="task-item">
+      <mat-card class="task-card">
+        <mat-card-header>
+          <mat-card-title>{{ task.title }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Completada: <strong>{{ task.completed ? 'Sí' : 'No' }}</strong></p>
+        </mat-card-content>
+      </mat-card>
+      <mat-divider></mat-divider>
+    </li>
+  </ul>
+</div>
